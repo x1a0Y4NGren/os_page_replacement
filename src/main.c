@@ -36,19 +36,7 @@ static void run_basic_experiment(double sequential_ratio)
 
 static void run_extension_preview(void)
 {
-    int pages[INSTRUCTION_COUNT];
-
-    printf("\nExtension preview: random page stream\n");
-    generate_random_page_stream(pages, INSTRUCTION_COUNT);
-    printf("Frame    Improved\n");
-    printf("%-8d %.4f\n", MIN_FRAME_COUNT,
-           run_improved_algorithm(pages, INSTRUCTION_COUNT, MIN_FRAME_COUNT));
-
-    printf("\nExtension preview: loop page stream\n");
-    generate_loop_page_stream(pages, INSTRUCTION_COUNT);
-    printf("Frame    Improved\n");
-    printf("%-8d %.4f\n", MIN_FRAME_COUNT,
-           run_improved_algorithm(pages, INSTRUCTION_COUNT, MIN_FRAME_COUNT));
+    run_extension_experiments();
 }
 
 int main(void)

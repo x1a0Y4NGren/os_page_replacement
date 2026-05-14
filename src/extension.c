@@ -6,7 +6,6 @@
 #include "algorithms.h"
 #include "common.h"
 
-/* Member D: extension experiments and CLOCK improved algorithm. */
 
 void generate_random_page_stream(int pages[], int n)
 {

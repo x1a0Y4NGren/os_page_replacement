@@ -6,7 +6,6 @@
 #include "extension.h"
 #include "sequence.h"
 
-/* Member A: main program and module integration only. */
 
 static void print_algorithm_table(const int pages[], int n)
 {
@@ -47,14 +46,11 @@ int main(void)
     printf("Instruction count: %d, virtual pages: %d, frames: %d-%d\n",
            INSTRUCTION_COUNT, VIRTUAL_PAGE_COUNT, MIN_FRAME_COUNT, MAX_FRAME_COUNT);
 
-    /* Required default experiment: 50% sequential execution. */
     run_basic_experiment(DEFAULT_SEQUENTIAL_RATIO);
 
-    /* Reserved experiment entries for comparison in the report. */
     run_basic_experiment(0.25);
     run_basic_experiment(0.75);
 
-    /* Extension entry. Keep concise so default output remains report-friendly. */
     run_extension_preview();
 
     return 0;

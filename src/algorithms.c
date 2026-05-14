@@ -2,7 +2,6 @@
 
 #include <limits.h>
 
-/* Member B: implement OPT, FIFO and LRU here. */
 
 static int find_page(const int frames[], int frame_count, int page)
 {

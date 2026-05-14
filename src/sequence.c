@@ -4,7 +4,6 @@
 
 #include "common.h"
 
-/* Member C: implement instruction sequence generation and page conversion here. */
 
 static int clamp_instruction(int value)
 {
